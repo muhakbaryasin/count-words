@@ -56,9 +56,15 @@ public class ConsoleView implements View {
 
     @Override
     public void showOver5CharWords(CountWordsResult countWordsResult) {
-        System.out.printf(
-                "Words over 5 chars: %s \n",
-                String.join(", ", countWordsResult.getOver5CharWords())
-        );
+        System.out.print("Words over 5 chars: ");
+
+        if (countWordsResult.getOver5CharWords().isEmpty()) {
+            System.out.println("-- None --");
+        } else {
+            System.out.printf(
+                    "%s \n",
+                    String.join(", ", countWordsResult.getOver5CharWords())
+            );
+        }
     }
 }
