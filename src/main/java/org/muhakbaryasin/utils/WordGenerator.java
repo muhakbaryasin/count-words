@@ -10,11 +10,11 @@ public class WordGenerator {
         Random random = new Random();
 
         // Generates a random number of words between 5 and 10
-        int numberOfWords = random.nextInt(10) + 5;
+        int numberOfWords = random.nextInt(5) + 5;
 
         // Generates a random length between 2 and 7 characters
         for (int i = 0; i < numberOfWords; i++) {
-            int wordLength = random.nextInt(7) + 2;
+            int wordLength = random.nextInt(5) + 2;
             words.add(generateRandomWord(wordLength));
         }
 

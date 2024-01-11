@@ -1,6 +1,6 @@
 package org.muhakbaryasin.interfaces;
 
-import org.muhakbaryasin.entities.Result;
+import org.muhakbaryasin.entities.CountWordsResult;
 
 import java.util.List;
 
@@ -9,5 +9,5 @@ public interface WordCounter {
     // so, if in the future the Counter logic different,
     // than we will just need to create other implementation
 
-    Result count(List<String> words);
+    CountWordsResult count(List<String> words);
 }
