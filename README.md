@@ -11,7 +11,6 @@ A simple Java application to count words based on specific rules.
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -39,3 +38,9 @@ To install and run the **Count Words** application, follow these steps:
 
    ```bash
    git clone https://github.com/muhakbaryasin/count-words.git
+
+2. Open the project from IntellijIDEA
+
+## Usage
+Main Console
+![Maion Console](https://github.com/muhakbaryasin/count-words/blob/main/console.png?raw=true)
