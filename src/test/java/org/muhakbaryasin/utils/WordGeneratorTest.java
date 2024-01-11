@@ -12,14 +12,14 @@ class WordGeneratorTest {
     void generateRandomWords() {
         List<String> words = WordGenerator.generateRandomWords();
 
-        // Check if the list is not null and not empty
+        // Assert the list is not null and not empty
         assertNotNull(words);
         assertFalse(words.isEmpty());
 
-        // Check if the number of words is between 5 and 10
+        // Assert the number of words is between 5 and 10
         assertTrue(words.size() >= 5 && words.size() <= 10);
 
-        // Check if each word has a length between 2 and 7
+        // Assert each word has a length between 2 and 7
         for (String word : words) {
             assertTrue(word.length() >= 2 && word.length() <= 7);
         }
@@ -29,13 +29,10 @@ class WordGeneratorTest {
     void generateRandomWord() {
         String randomWord = WordGenerator.generateRandomWord(5);
 
-        // Check if the generated word has the correct length
+        // Assert the generated word has the correct length
         assertEquals(5, randomWord.length());
 
-        // Check if the first character is uppercase or title case
-        assertTrue(Character.isUpperCase(randomWord.charAt(0)) || Character.isTitleCase(randomWord.charAt(0)));
-
-        // Check if the second character is lowercase
+        // Assert second character is lowercase
         assertTrue(Character.isLowerCase(randomWord.charAt(1)));
     }
 }

@@ -11,6 +11,10 @@ public class SimpleWordCounter implements WordCounter {
         int totalM = 0;
         List<String> over5CharWords = new ArrayList<>();
 
+        // handle empty words list
+        if (words.isEmpty())
+            return new CountWordsResult.Builder().totalM(totalM).over5CharWords(over5CharWords).build();
+
         // iterate through each word
         for (var word: words) {
 

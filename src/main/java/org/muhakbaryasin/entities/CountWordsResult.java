@@ -44,7 +44,7 @@ public class CountWordsResult {
         }
     }
 
-    // toString to facilitate debugging
+    // toString to facilitate easier debugging
     @Override
     public String toString() {
         return "Result{" +
