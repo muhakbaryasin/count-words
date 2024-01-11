@@ -40,6 +40,7 @@ To install and run the **Count Words** application, follow these steps:
    git clone https://github.com/muhakbaryasin/count-words.git
 
 2. Open the project from IntellijIDEA
+3. Run (execute) MainConsole
 
 ## Usage
 Main Console
